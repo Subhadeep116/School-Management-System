@@ -70,4 +70,68 @@
 | 📢 **Notice Board**       | Add & display important updates |
 | 📆 **Attendance**         | Clock-in/out, regularization, approval |
 | 🌴 **Leave & Holidays**   | Apply, approve, manage leaves & holidays |
+## 🚀 Getting Started
 
+### 🔧 Backend Setup (Spring Boot)
+
+```bash
+git clone https://github.com/yourusername/school-management-system.git
+cd backend
+./mvnw clean install
+```
+---
+
+## ⚙️ Setup Instructions
+
+### Configure Your Database
+
+Edit the file at `src/main/resources/application.properties` in the backend folder and update your MySQL connection details:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/school_db
+spring.datasource.username=root
+spring.datasource.password=your_password
+
+```
+### Run the Backend
+
+Navigate to the backend directory and run:
+
+```bash
+./mvnw spring-boot:run
+```
+### 🌐 Frontend Setup (React JS)
+
+Navigate to the frontend folder and install dependencies:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+## 🔐 Authentication Flow
+
+- Uses JWT tokens for secure session handling.
+- Role-based API access for Admin, Teacher, and Student.
+- Tokens are stored in HTTP headers and validated using Spring Security filters.
+
+---
+
+## 📦 Folder Structure
+
+```bash
+school-management-system/
+├── backend/               # Spring Boot Backend
+│   └── src/
+│       └── main/java/com/school
+│       └── resources/application.properties
+├── frontend/              # React JS Frontend
+│   └── public/
+│   └── src/
+└── README.md
+
+```
+## 🙋‍♂️ Author
+
+Developed by **[Subhadeep Kumbhakar]**  
+🔗 GitHub: [@Subhadeep116](https://github.com/Subhadeep116)  
